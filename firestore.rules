@@ -1,0 +1,68 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isAdmin() {
+      return request.auth != null;
+    }
+
+    // Members — public read for kiosk phone search, admin write
+    match /members/{id} {
+      allow read:  if true;
+      allow write: if isAdmin();
+    }
+
+    // Services — public read for kiosk, admin write
+    match /services/{id} {
+      allow read:  if true;
+      allow write: if isAdmin();
+    }
+
+    // Attendance — public create for kiosk check-ins, admin read
+    match /attendance/{id} {
+      allow read:            if isAdmin();
+      allow create:          if true;
+      allow update, delete:  if isAdmin();
+    }
+
+    // Follow-ups — admin only
+    match /follow-ups/{id} {
+      allow read, write: if isAdmin();
+    }
+
+    // Sermons — public read all (filter done in query), admin write
+    match /sermons/{id} {
+      allow read:  if true;
+      allow write: if isAdmin();
+    }
+
+    // Events — public read all (filter done in query), admin write
+    match /events/{id} {
+      allow read:  if true;
+      allow write: if isAdmin();
+    }
+
+    // Messages — public create (contact form), admin read/manage
+    match /messages/{id} {
+      allow create:          if true;
+      allow read, update, delete: if isAdmin();
+    }
+
+    // Users (admin roles) — admin only
+    match /users/{id} {
+      allow read, write: if isAdmin();
+    }
+
+    // Groups — public read, admin write
+    match /groups/{id} {
+      allow read:  if true;
+      allow write: if isAdmin();
+    }
+
+    // Pastors — public read, admin write
+    match /pastors/{id} {
+      allow read:  if true;
+      allow write: if isAdmin();
+    }
+  }
+}

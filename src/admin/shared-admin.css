@@ -1,0 +1,9 @@
+.admin-page { display: flex; flex-direction: column; height: 100%; }
+.admin-page__topbar { display: flex; align-items: center; justify-content: space-between; padding: var(--space-5) var(--space-6); background: #fff; border-bottom: 1px solid var(--color-border); flex-shrink: 0; }
+.admin-page__title { font-size: var(--text-md); font-weight: var(--font-bold); color: var(--color-text-1); }
+.admin-page__sub { font-size: var(--text-sm); color: var(--color-text-2); margin-top: 2px; }
+.admin-page__actions { display: flex; gap: var(--space-2); }
+.admin-page__btn-primary { font-size: var(--text-sm); font-weight: var(--font-bold); padding: 8px 18px; border-radius: var(--radius-md); background: var(--color-brand); color: #fff; border: none; cursor: pointer; }
+.admin-page__btn-ghost   { font-size: var(--text-sm); padding: 8px 16px; border-radius: var(--radius-md); background: #fff; color: var(--color-text-2); border: 1px solid var(--color-border); cursor: pointer; }
+.admin-page__btn-teal    { font-size: var(--text-sm); font-weight: var(--font-bold); padding: 8px 18px; border-radius: var(--radius-md); background: var(--color-teal); color: #fff; border: none; cursor: pointer; }
+.admin-page__body { padding: var(--space-6); flex: 1; overflow-y: auto; }

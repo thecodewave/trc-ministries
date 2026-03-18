@@ -1,0 +1,53 @@
+.staff-mgmt { display:flex; flex-direction:column; height:100%; }
+.staff-mgmt__topbar { display:flex; align-items:center; justify-content:space-between; padding:var(--space-5) var(--space-6); background:#fff; border-bottom:1px solid var(--color-border); flex-shrink:0; }
+.staff-mgmt__title { font-size:var(--text-md); font-weight:var(--font-bold); color:var(--color-text-1); }
+.staff-mgmt__sub { font-size:var(--text-sm); color:var(--color-text-2); margin-top:2px; }
+.staff-mgmt__btn-primary { font-size:var(--text-sm); font-weight:var(--font-bold); padding:8px 18px; border-radius:var(--radius-md); background:var(--color-brand); color:#fff; border:none; cursor:pointer; }
+.staff-mgmt__btn-ghost   { font-size:var(--text-sm); padding:8px 16px; border-radius:var(--radius-md); background:#fff; color:var(--color-text-2); border:1px solid var(--color-border); cursor:pointer; }
+.staff-mgmt__content { padding:var(--space-5) var(--space-6); flex:1; overflow-y:auto; display:flex; flex-direction:column; gap:var(--space-4); }
+.staff-mgmt__how-card { background:var(--color-brand-pale); border-radius:var(--radius-lg); padding:var(--space-5); border:1px solid var(--color-border); }
+.staff-mgmt__how-title { font-size:var(--text-base); font-weight:var(--font-bold); color:var(--color-brand); margin-bottom:var(--space-4); }
+.staff-mgmt__how-steps { display:flex; flex-direction:column; gap:var(--space-3); }
+.staff-mgmt__how-step { display:flex; gap:var(--space-3); align-items:flex-start; }
+.staff-mgmt__how-num { width:24px; height:24px; border-radius:50%; background:var(--color-brand); color:#fff; display:flex; align-items:center; justify-content:center; font-size:var(--text-xs); font-weight:var(--font-bold); flex-shrink:0; margin-top:2px; }
+.staff-mgmt__how-step-title { font-size:var(--text-sm); font-weight:var(--font-bold); color:var(--color-text-1); margin-bottom:2px; }
+.staff-mgmt__how-step-desc  { font-size:var(--text-sm); color:var(--color-text-2); line-height:1.55; }
+.staff-mgmt__form-card { background:var(--color-surface); border-radius:var(--radius-lg); border:1px solid var(--color-border); padding:var(--space-5); }
+.staff-mgmt__form-title { font-size:var(--text-base); font-weight:var(--font-bold); color:var(--color-text-1); margin-bottom:var(--space-4); }
+.staff-mgmt__form { display:flex; flex-direction:column; gap:var(--space-3); }
+.staff-mgmt__form-grid { display:grid; grid-template-columns:1fr 1fr; gap:var(--space-3); }
+.staff-mgmt__field { display:flex; flex-direction:column; gap:4px; }
+.staff-mgmt__label { font-size:var(--text-xs); font-weight:var(--font-bold); color:var(--color-text-1); }
+.staff-mgmt__field-hint { font-size:var(--text-xs); color:var(--color-text-3); margin-top:2px; }
+.staff-mgmt__input,.staff-mgmt__select { padding:9px 12px; border-radius:var(--radius-md); border:1px solid var(--color-border); font-size:var(--text-base); color:var(--color-text-1); background:#fff; width:100%; font-family:inherit; }
+.staff-mgmt__input:focus,.staff-mgmt__select:focus { outline:none; border-color:var(--color-brand); }
+.staff-mgmt__error { font-size:var(--text-sm); color:var(--color-rose); background:var(--color-rose-light); padding:var(--space-2) var(--space-3); border-radius:var(--radius-md); }
+.staff-mgmt__success { font-size:var(--text-sm); color:var(--color-teal); background:var(--color-teal-light); padding:var(--space-2) var(--space-3); border-radius:var(--radius-md); }
+.staff-mgmt__success-banner { font-size:var(--text-sm); color:var(--color-teal); background:var(--color-teal-light); padding:var(--space-3) var(--space-4); border-radius:var(--radius-md); border:1px solid #9FE1CB; }
+.staff-mgmt__form-actions { display:flex; gap:var(--space-2); justify-content:flex-end; }
+.staff-mgmt__roles-info { display:grid; grid-template-columns:1fr 1fr; gap:var(--space-3); }
+.staff-mgmt__role-card { border-radius:var(--radius-md); padding:var(--space-4); border:1px solid var(--color-border); }
+.staff-mgmt__role-card--super { background:var(--color-brand-pale); }
+.staff-mgmt__role-card--staff { background:var(--color-teal-light); }
+.staff-mgmt__role-label { font-size:var(--text-sm); font-weight:var(--font-bold); color:var(--color-text-1); margin-bottom:var(--space-2); }
+.staff-mgmt__role-desc  { font-size:var(--text-sm); color:var(--color-text-2); line-height:1.55; }
+.staff-mgmt__loading { display:flex; justify-content:center; padding:var(--space-12); }
+.staff-mgmt__spinner { width:32px; height:32px; border-radius:50%; border:3px solid var(--color-border); border-top-color:var(--color-brand); animation:spin 0.8s linear infinite; }
+@keyframes spin { to{transform:rotate(360deg);} }
+.staff-mgmt__list { display:flex; flex-direction:column; gap:var(--space-3); }
+.staff-card { display:flex; align-items:center; gap:var(--space-4); padding:var(--space-4) var(--space-5); background:#fff; border-radius:var(--radius-lg); border:1px solid var(--color-border); flex-wrap:wrap; }
+.staff-card__av { width:44px; height:44px; border-radius:50%; background:var(--color-brand-light); color:var(--color-brand); display:flex; align-items:center; justify-content:center; font-size:var(--text-md); font-weight:var(--font-bold); flex-shrink:0; }
+.staff-card__info { flex:1; min-width:180px; }
+.staff-card__name  { font-size:var(--text-base); font-weight:var(--font-bold); color:var(--color-text-1); }
+.staff-card__email { font-size:var(--text-sm); color:var(--color-text-2); }
+.staff-card__uid   { font-size:var(--text-xs); color:var(--color-text-3); font-family:var(--font-mono); margin-top:2px; }
+.staff-card__role { font-size:var(--text-xs); font-weight:var(--font-bold); padding:4px 12px; border-radius:var(--radius-full); white-space:nowrap; }
+.staff-card__role--super { background:var(--color-brand-light); color:var(--color-brand); }
+.staff-card__role--staff { background:var(--color-teal-light); color:var(--color-teal); }
+.staff-card__access-desc { font-size:var(--text-xs); color:var(--color-text-2); max-width:260px; }
+.staff-card__actions {}
+.staff-card__you-tag { font-size:var(--text-xs); padding:3px 9px; border-radius:var(--radius-full); background:var(--color-surface); color:var(--color-text-3); border:1px solid var(--color-border); }
+.staff-card__you-tag--you { background:var(--color-gold-light); color:var(--color-gold); border-color:var(--color-gold-light); }
+.staff-card__remove-btn { font-size:var(--text-xs); padding:5px 12px; border-radius:var(--radius-sm); border:1px solid var(--color-rose-light); color:var(--color-rose); background:#fff; cursor:pointer; transition:all var(--transition-fast); }
+.staff-card__remove-btn:hover { background:var(--color-rose); color:#fff; border-color:var(--color-rose); }
+@media (max-width:768px) { .staff-mgmt__topbar,.staff-mgmt__content { padding:var(--space-4); } .staff-mgmt__form-grid { grid-template-columns:1fr; } .staff-mgmt__roles-info { grid-template-columns:1fr; } }

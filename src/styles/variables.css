@@ -1,0 +1,92 @@
+/* ============================================================
+   TRC Ministries — Design Tokens
+   All colours, spacing, typography, and breakpoints
+   ============================================================ */
+
+:root {
+  /* Brand colours */
+  --color-brand:        #1a1654;
+  --color-brand-mid:    #2d2a9e;
+  --color-brand-light:  #eeeeff;
+  --color-brand-pale:   #f5f5ff;
+
+  /* Accent colours */
+  --color-gold:         #c9860a;
+  --color-gold-light:   #fef3d8;
+  --color-gold-pale:    #fffbf0;
+
+  --color-teal:         #0d7a65;
+  --color-teal-light:   #e0f5f0;
+
+  --color-rose:         #b03060;
+  --color-rose-light:   #faeef3;
+
+  /* Neutrals */
+  --color-surface:      #f7f7fb;
+  --color-border:       #e2e2ee;
+  --color-text-1:       #12113a;
+  --color-text-2:       #5a5882;
+  --color-text-3:       #9896bb;
+
+  /* Status */
+  --color-success:      #0d7a65;
+  --color-warning:      #c9860a;
+  --color-danger:       #b03060;
+
+  /* Typography */
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', 'Courier New', monospace;
+
+  /* Font sizes */
+  --text-xs:   11px;
+  --text-sm:   12px;
+  --text-base: 14px;
+  --text-md:   16px;
+  --text-lg:   20px;
+  --text-xl:   28px;
+  --text-2xl:  36px;
+  --text-3xl:  48px;
+
+  /* Font weights */
+  --font-normal:  400;
+  --font-medium:  500;
+  --font-bold:    700;
+
+  /* Spacing scale */
+  --space-1:   4px;
+  --space-2:   8px;
+  --space-3:   12px;
+  --space-4:   16px;
+  --space-5:   20px;
+  --space-6:   24px;
+  --space-8:   32px;
+  --space-10:  40px;
+  --space-12:  48px;
+  --space-16:  64px;
+
+  /* Border radius */
+  --radius-sm:   6px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-xl:   16px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm:  0 1px 4px rgba(26, 22, 84, 0.08);
+  --shadow-md:  0 4px 16px rgba(26, 22, 84, 0.10);
+  --shadow-lg:  0 8px 32px rgba(26, 22, 84, 0.14);
+
+  /* Navbar height */
+  --navbar-height: 64px;
+
+  /* Transitions */
+  --transition-fast:   0.15s ease;
+  --transition-normal: 0.25s ease;
+}
+
+/* ── Responsive breakpoints (use in media queries) ──
+   --bp-sm:  480px   (large phone)
+   --bp-md:  768px   (tablet)
+   --bp-lg:  1024px  (small desktop)
+   --bp-xl:  1280px  (desktop)
+   ──────────────────────────────────────────────── */
